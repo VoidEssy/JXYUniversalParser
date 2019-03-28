@@ -1,8 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InterfaceMediator\InterfaceMediator.csproj" />
+    <ProjectReference Include="..\JsonParser\JsonHandler.csproj" />
+    <ProjectReference Include="..\XMLParser\XMLHandler.csproj" />
+    <ProjectReference Include="..\YamlParser\YamlParser.csproj" />
+  </ItemGroup>
 
 </Project>
