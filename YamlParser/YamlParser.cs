@@ -1,6 +1,5 @@
 ﻿using InterfaceMediator;
 using System;
-using System.IO;
 
 namespace YamlHandler
 {
@@ -12,8 +11,6 @@ namespace YamlHandler
 
         public bool CanParse(string filePath)
         {
-            if (File.Exists(filePath))
-            {
                 try
                 {
                     return true;
@@ -23,11 +20,6 @@ namespace YamlHandler
                 {
                     return false;
                 }
-            }
-            else
-            {
-                throw new InvalidOperationException("File doesn't exist");
-            }
         }
 
         public bool CanSerialize(object obj, string format)

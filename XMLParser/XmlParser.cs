@@ -1,6 +1,5 @@
 ﻿using InterfaceMediator;
 using System;
-using System.IO;
 using System.Xml.Linq;
 
 namespace XMLHandler
@@ -13,8 +12,6 @@ namespace XMLHandler
         }
         public bool CanParse(string filePath)
         {
-            if (File.Exists(filePath))
-            {
                 XElement element;
                 try
                 {
@@ -26,10 +23,6 @@ namespace XMLHandler
                 {
                     return false;
                 }
-            }else
-            {
-                throw new InvalidOperationException("File doesn't exist");
-            }
         }
 
 
@@ -43,7 +36,6 @@ namespace XMLHandler
 
         public object Parse(string filePath)
         {
-            Path.GetFullPath(filePath);
             return ser.Deserialize<object>(filePath);
         }
 

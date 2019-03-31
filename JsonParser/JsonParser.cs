@@ -10,10 +10,9 @@ namespace JsonHandler
 
         public bool CanParse(string filePath)
         {
-            if (File.Exists(filePath))
-            {
                 try
                 {
+                    new JsonParser().Parse(filePath);
                     return true;
 
                 }
@@ -21,11 +20,6 @@ namespace JsonHandler
                 {
                     return false;
                 }
-            }
-            else
-            {
-                throw new InvalidOperationException("File doesn't exist");
-            }
         }
 
         public bool CanSerialize(object obj, string format)
