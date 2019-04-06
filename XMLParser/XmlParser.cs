@@ -1,4 +1,5 @@
-﻿using InterfaceMediator;
+﻿using FormatsEnums;
+using InterfaceMediator;
 using System;
 using System.Xml.Linq;
 
@@ -26,10 +27,9 @@ namespace XMLHandler
         }
 
 
-        public bool CanSerialize(object obj, string format)
+        public bool CanSerialize(object obj, Format format)
         {
-            format.ToUpper();
-            if (obj != null && format.Equals("XML") || format.Equals(".XML"))
+            if (obj != null && format.Equals(Format.Xml))
                 return true;
             return false;
         }
@@ -39,7 +39,7 @@ namespace XMLHandler
             return ser.Deserialize<object>(filePath);
         }
 
-        public string Serialize(object obj)
+        public object Serialize(object obj)
         {
             return ser.Serialize(obj);
         }

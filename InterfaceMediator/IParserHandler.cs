@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormatsEnums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,7 +20,7 @@ namespace InterfaceMediator
         /// <param name="obj"></param>
         /// <param name="format"></param>
         /// <returns></returns>
-        bool CanSerialize(object obj, string format);
+        bool CanSerialize(object obj, Format format);
 
         /// <summary>
         /// Generate an object from file at the filepath
@@ -33,6 +34,6 @@ namespace InterfaceMediator
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        string Serialize(object obj);
+        object Serialize(object obj);
     }
 }

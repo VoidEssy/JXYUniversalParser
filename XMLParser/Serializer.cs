@@ -18,7 +18,7 @@ namespace XMLHandler
             }
         }
 
-        public string Serialize<T>(T Obj)
+        public object Serialize<T>(T Obj)
         {
             XmlSerializer serializer = new XmlSerializer(Obj.GetType());
             using (StringWriter sw = new StringWriter())

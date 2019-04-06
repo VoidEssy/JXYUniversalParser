@@ -1,43 +1,50 @@
-﻿using InterfaceMediator;
+﻿using FormatsEnums;
+using InterfaceMediator;
 using System;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace JsonHandler
 {
     public class JsonParser : IParserHandler
     {
-
+        private JsonSerializer ser = new JsonSerializer();
 
         public bool CanParse(string filePath)
         {
-                try
-                {
-                    new JsonParser().Parse(filePath);
-                    return true;
+            try
+            {
+                new JsonParser().Parse(filePath);
+                return true;
 
-                }
-                catch (Exception ex)
-                {
-                    return false;
-                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
-        public bool CanSerialize(object obj, string format)
+        public bool CanSerialize(object obj, Format format)
         {
-            format.ToUpper();
-            if (obj != null && format.Equals("JSON") || format.Equals(".JSON"))
+            if (obj != null && format.Equals(Format.Json))
                 return true;
             return false;
         }
 
         public object Parse(string filePath)
         {
-            throw new NotImplementedException();
+            JsonSerializer se = new JsonSerializer();
+            using (JsonReader jr = new JsonTextReader(new StringReader(File.ReadAllText(filePath))))
+                return se.Deserialize(jr);
         }
 
-        public string Serialize(object obj)
+        public object Serialize(object obj)
         {
-            throw new NotImplementedException();
+            using (TextWriter txt = new StringWriter())
+            {
+                ser.Serialize(txt, obj);
+                return txt;
+            }
         }
     }
 }

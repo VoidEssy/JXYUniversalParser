@@ -4,8 +4,4 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\FormatsEnums\FormatsEnums.csproj" />
-  </ItemGroup>
-
 </Project>

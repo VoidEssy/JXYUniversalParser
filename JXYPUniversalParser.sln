@@ -5,13 +5,17 @@ VisualStudioVersion = 15.0.28307.438
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JXYPUniversalParser", "JXYPUniversalParser\JXYPUniversalParser.csproj", "{F89E366F-DED4-4F78-AC52-626867E90ADE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YamlParser", "YamlParser\YamlParser.csproj", "{2BC7CE79-7BA7-49E0-A482-7C165E73943A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YamlParser", "YamlParser\YamlParser.csproj", "{2BC7CE79-7BA7-49E0-A482-7C165E73943A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLHandler", "XMLParser\XMLHandler.csproj", "{C44FF732-DB96-42A1-A970-BD49A32527B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLHandler", "XMLParser\XMLHandler.csproj", "{C44FF732-DB96-42A1-A970-BD49A32527B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonHandler", "JsonParser\JsonHandler.csproj", "{AADB5098-1FE2-452F-9C88-E12D8C9BCAA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonHandler", "JsonParser\JsonHandler.csproj", "{AADB5098-1FE2-452F-9C88-E12D8C9BCAA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceMediator", "InterfaceMediator\InterfaceMediator.csproj", "{E9111151-968F-4B0D-B63C-5DF27A93F630}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceMediator", "InterfaceMediator\InterfaceMediator.csproj", "{E9111151-968F-4B0D-B63C-5DF27A93F630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatsEnums", "FormatsEnums\FormatsEnums.csproj", "{C6374BA8-EA97-4524-9512-6DEF862AAB5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevConsole", "DevConsole\DevConsole.csproj", "{4669A470-FF42-4125-9B6F-5024056E4599}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{E9111151-968F-4B0D-B63C-5DF27A93F630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9111151-968F-4B0D-B63C-5DF27A93F630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9111151-968F-4B0D-B63C-5DF27A93F630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6374BA8-EA97-4524-9512-6DEF862AAB5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6374BA8-EA97-4524-9512-6DEF862AAB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6374BA8-EA97-4524-9512-6DEF862AAB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6374BA8-EA97-4524-9512-6DEF862AAB5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4669A470-FF42-4125-9B6F-5024056E4599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4669A470-FF42-4125-9B6F-5024056E4599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4669A470-FF42-4125-9B6F-5024056E4599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4669A470-FF42-4125-9B6F-5024056E4599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

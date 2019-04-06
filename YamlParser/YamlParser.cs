@@ -1,4 +1,5 @@
-﻿using InterfaceMediator;
+﻿using FormatsEnums;
+using InterfaceMediator;
 using System;
 
 namespace YamlHandler
@@ -22,10 +23,9 @@ namespace YamlHandler
                 }
         }
 
-        public bool CanSerialize(object obj, string format)
+        public bool CanSerialize(object obj, Format format)
         {
-            format.ToUpper();
-            if (obj != null && format.Equals("YAML") || format.Equals(".YAML"))
+            if (obj != null && format.Equals(Format.Yaml))
                 return true;
             return false;
         }
@@ -35,7 +35,7 @@ namespace YamlHandler
             throw new NotImplementedException();
         }
 
-        public string Serialize(object obj)
+        public object Serialize(object obj)
         {
             throw new NotImplementedException();
         }
