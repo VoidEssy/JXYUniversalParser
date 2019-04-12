@@ -11,12 +11,12 @@ namespace XMLHandler
         public XmlParser()
         {
         }
-        public bool CanParse(string filePath)
+        public bool CanParse(string content)
         {
                 XElement element;
                 try
                 {
-                    element = XElement.Load(filePath);
+                    element = XElement.Parse(content);
                     return true;
 
                 }

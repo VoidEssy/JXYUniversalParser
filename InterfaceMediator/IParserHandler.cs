@@ -12,7 +12,7 @@ namespace InterfaceMediator
         /// </summary>
         /// <param name="filePath"></param>
         /// <returns></returns>
-        bool CanParse(string filePath);
+        bool CanParse(string content);
 
         /// <summary>
         /// Check if the object can be serialized into output data
@@ -25,9 +25,9 @@ namespace InterfaceMediator
         /// <summary>
         /// Generate an object from file at the filepath
         /// </summary>
-        /// <param name="filePath"></param>
+        /// <param name="content"></param>
         /// <returns></returns>
-        object Parse(string filePath);
+        object Parse(string content);
 
         /// <summary>
         /// Serialize Obj to output format

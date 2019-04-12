@@ -10,11 +10,11 @@ namespace JsonHandler
     {
         private JsonSerializer ser = new JsonSerializer();
 
-        public bool CanParse(string filePath)
+        public bool CanParse(string content)
         {
             try
             {
-                new JsonParser().Parse(filePath);
+                new JsonParser().Parse(content);
                 return true;
 
             }
@@ -31,10 +31,10 @@ namespace JsonHandler
             return false;
         }
 
-        public object Parse(string filePath)
+        public object Parse(string content)
         {
             JsonSerializer se = new JsonSerializer();
-            using (JsonReader jr = new JsonTextReader(new StringReader(File.ReadAllText(filePath))))
+            using (JsonReader jr = new JsonTextReader(new StringReader(content)))
                 return se.Deserialize(jr);
         }
 

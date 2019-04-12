@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonHandler", "JsonParser\J
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceMediator", "InterfaceMediator\InterfaceMediator.csproj", "{E9111151-968F-4B0D-B63C-5DF27A93F630}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatsEnums", "FormatsEnums\FormatsEnums.csproj", "{C6374BA8-EA97-4524-9512-6DEF862AAB5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormatsEnums", "FormatsEnums\FormatsEnums.csproj", "{C6374BA8-EA97-4524-9512-6DEF862AAB5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevConsole", "DevConsole\DevConsole.csproj", "{4669A470-FF42-4125-9B6F-5024056E4599}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevConsole", "DevConsole\DevConsole.csproj", "{4669A470-FF42-4125-9B6F-5024056E4599}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParserTest", "ParserTest\ParserTest.csproj", "{61B3FC02-75A3-4FB4-8963-F096D7886862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4669A470-FF42-4125-9B6F-5024056E4599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4669A470-FF42-4125-9B6F-5024056E4599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4669A470-FF42-4125-9B6F-5024056E4599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B3FC02-75A3-4FB4-8963-F096D7886862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B3FC02-75A3-4FB4-8963-F096D7886862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B3FC02-75A3-4FB4-8963-F096D7886862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B3FC02-75A3-4FB4-8963-F096D7886862}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
